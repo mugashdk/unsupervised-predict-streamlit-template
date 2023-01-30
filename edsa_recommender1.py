@@ -110,15 +110,19 @@ def main():
         st.image('resources/imgs/logo1.jpg',use_column_width=True)
 
 
-        st.write("Describe your winning approach on this page")
-        st.markdown("Many companies are built around lessening one’s environmental impact or carbon footprint. \
-		They offer products and services that are environmentally friendly and sustainable,             \
-		in line with their values and ideals. They would like to determine how people perceive           \
-		climate change and whether or not they believe it is a real threat. This would add to their       \
-		market research efforts in gauging how their product/service may be received.                     \n \
-		Providing an accurate and robust solution to this task gives companies access to a                \
-		broad base of consumer sentiment, spanning multiple demographic and geographic categories          \
-		- thus increasing their insights and informing future marketing strategies.") 
+        st.write("<h2 style='color: #37199A;'>Introduction</h2>", unsafe_allow_html=True)
+        st.markdown("In the modern world, Recommender Systems play a crucial role in driving social and \
+		economic success by providing individuals with relevant content that aligns with their             \
+		interests. Our company offers a cutting-edge solution to enhance the movie-watching experience.           \
+		")
+        
+        st.markdown("Our algorithm accurately predicts User's rating of a movie they have not viewed based on their historical preferences.    \
+        Our recommendation engine has the potential to revolutionize the film industry, \
+        similar to how tech giants such as Amazon, YouTube, and Facebook have utilized  \
+        recommender systems to improve their user experience. Companies like Netflix and \
+        Spotify have already proven the profitability of a successful recommendation engine, \
+        and we aim to bring that success to the film industry.\
+        Invest in the future of the film industry and join us in revolutionizing the movie-watching experience.") 
 
     # You may want to add more sections here for aspects such as an EDA,
     # or to provide your business pitch.
@@ -126,10 +130,10 @@ def main():
         st.markdown("<h1 style='color: #67B69B;'>About Us</h1>", unsafe_allow_html=True)
         # You can read a markdown file from supporting resources folder
 
-        st.write("The Company")
+        st.write("<h2 style='color: #37199A;'>The Company</h2>", unsafe_allow_html=True)
         st.markdown(" Dataverse is a ...")
 
-        st.subheader("Meet the Team")
+        st.subheader("Meet the Team ")
         if st.button('Farayi'): # information is hidden if button is clicked
             st.markdown('Farayi Myambo is a the Dataverse CEO')
         if st.button('David'): # information is hidden if button is clicked
