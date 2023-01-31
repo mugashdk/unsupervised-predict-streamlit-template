@@ -96,7 +96,7 @@ def main():
                     st.error("Oops! Looks like this algorithm does't work.\
                               We'll need to fix it!")
 
-        st.image('resources/imgs/logo1.jpg',use_column_width=True)
+        st.image('resources/imgs/logo2.jpg',use_column_width=True)
     # -------------------------------------------------------------------
 
     # ------------- SAFE FOR ALTERING/EXTENSION -------------------
@@ -107,7 +107,7 @@ def main():
         #st.title("My Title", style={"color": "green"})
     
         st.markdown("<h1 style='color: #67B69B;'>Solution Overview</h1>", unsafe_allow_html=True)
-        st.image('resources/imgs/logo1.jpg',use_column_width=True)
+        st.image('resources/imgs/logo2.jpg',use_column_width=True)
 
 
         st.write("<h2 style='color: #37199A;'>Introduction</h2>", unsafe_allow_html=True)
@@ -133,21 +133,27 @@ def main():
         st.write("<h2 style='color: #37199A;'>The Company</h2>", unsafe_allow_html=True)
         st.markdown(" Dataverse is a ...")
 
-        st.subheader("Meet the Team ")
+        st.write("<h2 style='color: #37199A;'>Meet the Team</h2>", unsafe_allow_html=True)
         if st.button('Farayi'): # information is hidden if button is clicked
+            st.image('resources/imgs/farayi.jpeg',use_column_width=True)
             st.markdown('Farayi Myambo is a the Dataverse CEO')
         if st.button('David'): # information is hidden if button is clicked
+            st.image('resources/imgs/Mugambi.jpeg',use_column_width=True)
             st.markdown('David Mugambi is a Dataverse Project Manager')
         if st.button('Chinonso'): # information is hidden if button is clicked
+            st.image('resources/imgs/nonso.png',use_column_width=True)
             st.markdown('Chinonso Agulonu is a Dataverse Developer/Strategist')
-        if st.button('Josiah'): # information is hidden if button is clicked
+        if st.button('Joy'): # information is hidden if button is clicked
+            st.image('resources/imgs/joy.jpeg',use_column_width=True)
             st.markdown('Joy Obukohwo is a Dataverse Developer/strategist')
         if st.button('Orismeke'): # information is hidden if button is clicked
+            
             st.markdown('Orisemeke ibude is the Dataverse Product lead')
         if st.button('Temitope'): # information is hidden if button is clicked
+            st.image('resources/imgs/Temi.jpg',use_column_width=True)
             st.markdown('Temitope Olaitan is the Dataverse Communictions')
 
-        st.image('resources/imgs/logo1.jpg',use_column_width=True)
+        st.image('resources/imgs/logo2.jpg',use_column_width=True)
 
 
 
