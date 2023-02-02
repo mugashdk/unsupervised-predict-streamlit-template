@@ -139,3 +139,5 @@ cython_debug/
 
 #heavy data
 edsa-movie-recommendation
+edsadata/
+svd_model (1).pkl

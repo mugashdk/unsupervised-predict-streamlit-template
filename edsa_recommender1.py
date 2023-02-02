@@ -34,8 +34,8 @@ import numpy as np
 
 # Custom Libraries
 from utils.data_loader import load_movie_titles
-from recommenders.collaborative_based import collab_model
-from recommenders.content_based import content_model
+#from recommenders.collaborative_based import collab_model
+#from recommenders.content_based import content_model
 
 # Data Loading
 title_list = load_movie_titles('resources/data/movies.csv')
@@ -54,7 +54,7 @@ def main():
     if page_selection == "Recommender System":
         # Header contents
         st.write('# Movie Recommender Engine')
-        st.write('### EXPLORE Data Science Academy Unsupervised Predict')
+        st.write('### Dataverse AI')
         st.image('resources/imgs/Image_header.png',use_column_width=True)
         # Recommender System algorithm selection
         sys = st.radio("Select an algorithm",
@@ -111,6 +111,7 @@ def main():
 
 
         st.write("<h2 style='color: #37199A;'>Introduction</h2>", unsafe_allow_html=True)
+        st.image('resources/imgs/intro.png',use_column_width=True)
         st.markdown("In the modern world, Recommender Systems play a crucial role in driving social and \
 		economic success by providing individuals with relevant content that aligns with their             \
 		interests. Our company offers a cutting-edge solution to enhance the movie-watching experience.           \
@@ -124,6 +125,20 @@ def main():
         and we aim to bring that success to the film industry.\
         Invest in the future of the film industry and join us in revolutionizing the movie-watching experience.") 
 
+        st.write("<h2 style='color: #37199A;'>Challenge</h2>", unsafe_allow_html=True)
+        st.image('resources/imgs/problemstatement.png',use_column_width=True)
+        st.markdown("Social Media gaints of today all have one thing in common; a recommendation machine. \
+        We have built a robust model to match the growing AI in our era of immense economic potential. \
+        Users of our system is able to recieve personalised recommendations - generating platform affinity \
+        for the streaming services which best facilitates their audience's viewing.           \
+		")
+        st.write("<h2 style='color: #37199A;'>solution</h2>", unsafe_allow_html=True)
+        st.image('resources/imgs/model.png',use_column_width=True)
+        st.markdown("We have created a recommendation algorithm based on Content and Collaborative filtering, \
+        capable of accurately predicting how a user will rate a movie they have not yet viewed, based on \
+        their  historical preferencesSocial Media gaints of today all have one thing in common; a recommendation machine. \
+         ")
+
     # You may want to add more sections here for aspects such as an EDA,
     # or to provide your business pitch.
     if page_selection == "About Us":
@@ -131,7 +146,11 @@ def main():
         # You can read a markdown file from supporting resources folder
 
         st.write("<h2 style='color: #37199A;'>The Company</h2>", unsafe_allow_html=True)
-        st.markdown(" Dataverse is a ...")
+        st.markdown("Dataverse is a top Artificial Intelligence development company, \
+        we help clients discover new business value with Cloud Computing, Machine Learning, \
+        and AI-assisted applications ensuring improved operational efficiency and smoother digital business transformation. \
+         ")
+        
 
         st.write("<h2 style='color: #37199A;'>Meet the Team</h2>", unsafe_allow_html=True)
         if st.button('Farayi'): # information is hidden if button is clicked
@@ -146,9 +165,6 @@ def main():
         if st.button('Joy'): # information is hidden if button is clicked
             st.image('resources/imgs/joy.jpeg',use_column_width=True)
             st.markdown('Joy Obukohwo is a Dataverse Developer/strategist')
-        if st.button('Orismeke'): # information is hidden if button is clicked
-            
-            st.markdown('Orisemeke ibude is the Dataverse Product lead')
         if st.button('Temitope'): # information is hidden if button is clicked
             st.image('resources/imgs/Temi.jpg',use_column_width=True)
             st.markdown('Temitope Olaitan is the Dataverse Communictions')

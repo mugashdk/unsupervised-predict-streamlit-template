@@ -33,6 +33,7 @@ import pandas as pd
 import numpy as np
 from sklearn.metrics.pairwise import cosine_similarity
 from sklearn.feature_extraction.text import CountVectorizer
+from sklearn.feature_extraction.text import TfidfVectorizer
 
 # import images
 from PIL import Image
@@ -42,8 +43,12 @@ import streamlit as st
 import joblib,os
 
 # Importing data
-movies = pd.read_csv('resources/data/movies.csv', sep = ',')
+movies = pd.read_csv('resources/data/edsadata/movies.csv', sep = ',')
 ratings = pd.read_csv('resources/data/ratings.csv')
+imdb_data = pd.read_csv('resources/data/edsadata/movies.csv')
+tags = pd.read_csv('resources/data/edsadata/movies.csv')
+train = pd.read_csv('resources/data/edsadata/movies.csv')
+test = pd.read_csv('resources/data/edsadata/movies.csv')
 movies.dropna(inplace=True)
 
 def data_preprocessing(subset_size):
