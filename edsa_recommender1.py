@@ -34,12 +34,16 @@ import numpy as np
 
 # Custom Libraries
 from utils.data_loader import load_movie_titles
-#from recommenders.collaborative_based import collab_model
+from recommenders.collaborative_based import collab_model
 #from recommenders.content_based import content_model
 
 # Data Loading
 title_list = load_movie_titles('resources/data/movies.csv')
-
+movies = pd.read_csv('resources/data/edsadata/movies.csv')
+imdb_data = pd.read_csv('resources/data/edsadata/imdb_data.csv')
+tags = pd.read_csv('resources/data/edsadata/tags.csv')
+train = pd.read_csv('resources/data/edsadata/train.csv')
+test = pd.read_csv('resources/data/edsadata/test.csv')
 # App declaration
 def main():
 
